@@ -1,0 +1,23 @@
+#Don't modify anything here
+php_flag display_errors on
+
+RewriteEngine on
+
+RewriteRule ^public - [L]
+
+RewriteRule ^errors/(\w+)$ index.php?controller=errors&action=$1&module=errors [L]
+
+RewriteRule ^admin/([^/]+)/([^/]+)/([1-9][0-9]*) index.php?controller=$1&action=$2&id=$3&module=admin [L,QSA]
+
+RewriteRule ^admin/([^/]+)/([^/]+) index.php?controller=$1&action=$2&module=admin [L,QSA]
+
+RewriteRule ^admin/([^/]+) index.php?controller=$1&action=index&module=admin [L,QSA]
+
+RewriteRule ^([^/]+)/([^/]+)/([1-9][0-9]*) index.php?controller=$1&action=$2&id=$3&module=web [L,QSA]
+
+RewriteRule ^([^/]+)/([^/]+) index.php?controller=$1&action=$2&module=web [L,QSA]
+
+RewriteRule ^([^/]+) index.php?controller=$1&action=index&module=web [L,QSA]
+
+RewriteRule ^ index.php?controller=homepage&action=index&module=web [L]
+
