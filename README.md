@@ -1,0 +1,12 @@
+# Hướng đẫn sử dụng
+- giới thiệu :
+  - đồ án làm về website bán hàng đồ công nghệ : laptop, pc, gear.
+  - có 2 đối tượng chính là : admin và người dùng .
+- công nghệ : php,ajax,jquery....
+- hướng dẫn cài đặt : 
+  - cài đặt xampp trên trang này : https://www.apachefriends.org/ và bật xampp lên
+  - clone project về đưa vào thư mục : C:\xampp\htdocs\webDoCongNghe
+  - tạo 1 database trên: http://localhost/phpmyadmin/ sử dụng file "web_ban_may_tinh.sql"
+  - config database ở trong thư mục :config\database.php
+  - trang chủ của người dùng sẽ là http://localhost/webDoCongNghe/
+  - trang chủ của admin sẽ là http://localhost/webDoCongNghe/admin/
